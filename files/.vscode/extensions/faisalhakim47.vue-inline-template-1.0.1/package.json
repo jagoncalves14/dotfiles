@@ -1,0 +1,83 @@
+{
+	"name": "vue-inline-template",
+	"displayName": "Vue Inline Template",
+	"description": "Syntax highlighting for vue inline template inside of JavaScript and TypeScript tagged template strings",
+	"version": "1.0.1",
+	"publisher": "faisalhakim47",
+	"icon": "docs/vue-logo.png",
+	"galleryBanner": {
+		"color": "#fcfcfc",
+		"theme": "light"
+	},
+	"scripts": {
+		"build": "vsce package"
+	},
+	"repository": {
+		"url": "https://github.com/faisalhakim47/vscode-vue-inline-template"
+	},
+	"bugs": {
+		"url": "https://github.com/faisalhakim47/vscode-vue-inline-template/issues"
+	},
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"keywords": [
+		"vue",
+		"template",
+		"javascript",
+		"typescript",
+		"html"
+	],
+	"contributes": {
+		"grammars": [
+			{
+				"injectTo": [
+					"source.js",
+					"source.js.jsx",
+					"source.jsx",
+					"source.ts",
+					"source.tsx",
+					"text.html.basic"
+				],
+				"scopeName": "inline.vue-inline-template",
+				"path": "./syntaxes/vue-inline-template.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.html": "html"
+				}
+			},
+			{
+				"injectTo": [
+					"source.js",
+					"source.js.jsx",
+					"source.jsx",
+					"source.ts",
+					"source.tsx",
+					"text.html.basic"
+				],
+				"scopeName": "inline.vue-inline-template.quoted.string.injection",
+				"path": "./syntaxes/vue-inline-template-quoted-string-injection.json",
+				"embeddedLanguages": {
+					"meta.template.expression.ts": "typescript"
+				}
+			}
+		],
+		"typescriptServerPlugins": [
+			{
+				"name": "typescript-lit-html-plugin"
+			}
+		]
+	},
+	"dependencies": {
+		"typescript-lit-html-plugin": "0.2.0"
+	},
+	"__metadata": {
+		"id": "f1136822-3deb-4e9c-aed9-fef92b955ed3",
+		"publisherId": "3046c84a-9586-48c6-bd6b-0e75a39a538a",
+		"publisherDisplayName": "Faisal Hakim",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1643969344244
+	}
+}
