@@ -20,6 +20,7 @@ brew cask install microsoft-teams
 brew cask install toggl-track
 brew cask install spotify
 brew cask install vlc
+brew cask install zeplin
 
 
 # Install Source Code Pro Font

@@ -13,7 +13,7 @@ set -e
 # Accessing an empty variable will yield an error
 set -u
 
-REPO_PATH="$PWD/files/"
+REPO_PATH="$PWD/../files/"
 
 # Adjust destination paths for dotfiles
 DOTFILES_ARRAY=("$HOME/.zshrc" "$HOME/.oh-my-zsh" "$HOME/.nvm" "$HOME/.p10k.zsh" "$HOME/.vimrc" "$HOME/.vscode" "$HOME/.gitconfig" "$HOME/.config" "$HOME/.macos" "/etc/hosts")

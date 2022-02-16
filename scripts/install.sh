@@ -11,7 +11,7 @@ set -e
 set -u
 
 # Set dotfiles directory
-DOTFILE_DIRECTORY="$HOME/Projects/dotfiles/files"
+DOTFILE_DIRECTORY="$HOME/Projects/dotfiles"
 
 # Set list of files/folders to symlink in the home directory
 DOTFILES_ARRAY=(".zshrc" ".oh-my-zsh" ".nvm" ".p10k.zsh" ".vimrc" ".vscode" ".gitconfig" ".config" ".macos")
@@ -24,7 +24,7 @@ bash "$DOTFILE_DIRECTORY/scripts/brew.sh"
 
 
 # Get into files directory
-cd ${DOTFILE_DIRECTORY}
+cd `${DOTFILE_DIRECTORY}/files`
 
 # Create symlinks (will overwrite old dotfiles)
 for file in "${DOTFILES_ARRAY[@]}"; do
